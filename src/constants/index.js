@@ -46,10 +46,6 @@ const services = [
     icon: creator,
   },
   {
-    title: "Web Developer Internship",
-    icon: mobile,
-  },
-  {
     title: "Full Stack Web Development",
     icon: backend,
   },
@@ -127,19 +123,6 @@ const experiences = [
 "Collaborated with team members via GitHub for version control and seamless code contributions.",
 "Deployed and optimized applications on Vercel for improved accessibility and performance.",
 "Implemented responsive design and ensured cross-browser compatibility for an enhanced user experience.",   ],
-  },
-  {
-    title: "Web Developer Intern",
-    company_name: "Oasis Infobyte",
-    icon: oasis,
-    iconBg: "#E6DEDD",
-    date: "May 2023 - June 2023",
-    points: [
-      "Designed and developed web applications using React.js, Express.js, and MySQL.",
-"Leveraged GitHub for version control, collaborating effectively with the development team.",
-"Enhanced application functionality and performance through efficient back-end integration and debugging.",
-"Ensured responsiveness and optimized user interfaces for seamless user interaction across devices.",
-    ],
   },
   {
     title: "Frontend Developer Intern",
