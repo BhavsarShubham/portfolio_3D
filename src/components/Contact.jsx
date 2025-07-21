@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef<HTMLFormElement>(null);
+  const formRef = useRef < HTMLFormElement > (null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -14,13 +14,14 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const [popup, setPopup] = useState<{ show: boolean; type: "success" | "error"; message: string }>({
+  const [popup, setPopup] = useState({
     show: false,
-    type: "success",
+    type: "success", // or "error"
     message: "",
   });
 
-  const [errors, setErrors] = useState<{ [key: string]: boolean }>({});
+
+  const [errors, setErrors] = useState < { [key: string]: boolean } > ({});
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -49,7 +50,7 @@ const Contact = () => {
     setLoading(true);
 
     const formData = new FormData();
-    formData.append("access_key", "ee406442-e21f-4105-b4ef-2aedf441acfd");
+    formData.append("access_key", "a3811932-d3d0-433c-80cf-7a43a61a1d46");
     formData.append("name", form.name);
     formData.append("email", form.email);
     formData.append("message", form.message);
@@ -81,9 +82,8 @@ const Contact = () => {
       {/* Popup Notification */}
       {popup.show && (
         <div
-          className={`fixed top-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg shadow-lg z-50 text-sm ${
-            popup.type === "success" ? "bg-green-600 text-white" : "bg-red-600 text-white"
-          }`}
+          className={`fixed top-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg shadow-lg z-50 text-sm ${popup.type === "success" ? "bg-green-600 text-white" : "bg-red-600 text-white"
+            }`}
         >
           {popup.message}
         </div>
@@ -107,9 +107,8 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-2 font-medium ${
-                errors.name ? "border-red-500" : "border-transparent"
-              }`}
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-2 font-medium ${errors.name ? "border-red-500" : "border-transparent"
+                }`}
             />
           </label>
 
@@ -122,9 +121,8 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
-              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-2 font-medium ${
-                errors.email ? "border-red-500" : "border-transparent"
-              }`}
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-2 font-medium ${errors.email ? "border-red-500" : "border-transparent"
+                }`}
             />
           </label>
 
@@ -137,9 +135,8 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What do you want to say?"
               rows={7}
-              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-2 font-medium resize-none ${
-                errors.message ? "border-red-500" : "border-transparent"
-              }`}
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-2 font-medium resize-none ${errors.message ? "border-red-500" : "border-transparent"
+                }`}
             />
           </label>
 
