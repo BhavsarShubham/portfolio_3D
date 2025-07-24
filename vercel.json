@@ -1,8 +1,11 @@
 {
+    "regions": [
+        "iad1"
+    ],
     "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
     ]
-  }
+}
