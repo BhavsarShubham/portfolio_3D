@@ -112,24 +112,13 @@ const technologies = [
 ];
 
 const experiences = [
+
   {
-    title: "Full Stack Web Development",
-    company_name: "Bharat Intern",
-    icon: bharat,
-    iconBg: "#383E56",
-    date: "Feb 2023 - March 2023",
-    points: [
-      "Developed and maintained full-stack web applications using React.js, Node.js, and MongoDB.",
-"Collaborated with team members via GitHub for version control and seamless code contributions.",
-"Deployed and optimized applications on Vercel for improved accessibility and performance.",
-"Implemented responsive design and ensured cross-browser compatibility for an enhanced user experience.",   ],
-  },
-  {
-    title: "Frontend Developer Intern",
+    title: "Web Developer Intern",
     company_name: "Octanet Solutions",
     icon: octa,
     iconBg: "#383E56",
-    date: "June 2022 - Sep 2023",
+    date: "Jul 2024 - Sep 202",
     points: [
       "Built and maintained responsive user interfaces using React.js, HTML, and TailwindCSS.",
 "Translated design mockups from figma into interactive, user-friendly web pages.",
